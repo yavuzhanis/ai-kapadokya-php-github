@@ -1,0 +1,3 @@
+<?php $eyebrow='ETKİNLİK HAFIZASI'; $heading='Geçmiş Buluşmalar'; $summary='2024’ten bugüne yapay zekâ ekosisteminin Kapadokya’daki yolculuğu.'; require BASE_PATH . '/templates/page-hero.php'; ?>
+<section class="archive-page section-pad"><div class="container"><div class="archive-grid"><?php foreach ($events as $event): ?><a class="archive-card reveal" href="<?= e(url('gecmis/' . $event['year'])) ?>"><img src="<?= e($event['hero_image']) ?>" alt=""><div><span><?= e($event['year']) ?></span><h2><?= e($event['title']) ?></h2><p><?= e($event['subtitle']) ?></p><b>Arşivi keşfet ↗</b></div></a><?php endforeach; ?></div></div></section>
+

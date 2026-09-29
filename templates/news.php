@@ -1,0 +1,3 @@
+<?php $eyebrow='BASINDA VE SAHADA'; $heading='Haberler'; $summary='Ulusal Yapay Zekâ Buluşması’ndan duyurular, basın yansımaları ve öne çıkan gelişmeler.'; require BASE_PATH . '/templates/page-hero.php'; ?>
+<section class="news-section standalone section-pad"><div class="container"><div class="news-grid"><?php foreach ($newsItems as $item): ?><article class="news-card reveal"><a href="<?= e(url('haberler/' . $item['slug'])) ?>"><img loading="lazy" src="<?= e($item['image_url']) ?>" alt=""><small><?= e(format_date_tr($item['published_at'])) ?></small><h2><?= e($item['title']) ?></h2><p><?= e($item['summary']) ?></p><span>Haberi oku ↗</span></a></article><?php endforeach; ?></div></div></section>
+

@@ -1,0 +1,3 @@
+<?php $eyebrow=format_date_tr($item['published_at']); $heading=$item['title']; $summary=$item['summary']; $heroImage=$item['image_url']; require BASE_PATH . '/templates/page-hero.php'; ?>
+<section class="article-layout section-pad"><div class="container article-grid"><article class="prose reveal"><?= clean_html($item['content']) ?><?php if ($item['source_url']): ?><p><a class="text-link" target="_blank" rel="noopener" href="<?= e($item['source_url']) ?>">Kaynağa git ↗</a></p><?php endif; ?></article><aside class="detail-card reveal"><span>Paylaş</span><p>Bu haberi bağlantısını kopyalayarak paylaşabilirsiniz.</p><button class="button button-dark" type="button" data-copy-url>Bağlantıyı kopyala</button></aside></div></section>
+
